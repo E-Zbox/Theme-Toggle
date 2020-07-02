@@ -1,0 +1,91 @@
+:root {
+    // colors
+    --blue: rgba(60, 70, 95, 1);
+    --blue-before: rgb(132, 130, 256);
+    --dark-bg: rgba(10, 30, 45, 1);
+    --dark-before: rgb(112, 240, 256);
+    --purple-bg: rgba(88, 73, 140, 0.8);
+    --purple-before: rgb(192, 256, 224);
+    --yellow-bg: rgba(228, 52, 116, 0.8);
+    --yellow-before: rgb(240, 256, 192);
+}
+main {
+    .toggle {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding-right: var(--seven-px);
+        .contents {
+            border-radius: 3px;
+            width: 210px;
+            padding: var(--seven-px) var(--ten-px);
+            display: grid;
+            grid-template-columns: repeat(auto-fit, 35px);
+            grid-gap: 0px var(--seven-px);
+            div {
+                display: flex;
+                position: relative;
+                width: 35px;
+                height: fit-content;
+                input[type=radio] {
+                    visibility: collapse;
+                    &:checked + label {
+                        &::before {
+                            transition: 600ms;
+                            right: 0px;
+                        }
+                    }
+                }
+                label {
+                    box-sizing: border-box;
+                    position: absolute;
+                    width: 35px;
+                    height: 15px;
+                    background-color: #b0b0b0;   
+                    border-radius: 30px;
+                    transition: 0.5s;
+                    &::before {
+                        content: '';
+                        background-color: #747474;
+                        position: absolute;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 20px;
+                        top: -2px;
+                        transition: 600ms;
+                    }
+                }
+                #blue:checked + label {
+                    background-color: rgba(90, 90, 240, 0.4);
+                    &::before {
+                        background-color: rgb(150, 150, 240);
+                    }
+                }
+                #dark:checked + label {
+                    background-color: rgba(30, 50, 65, 0.8);
+                    &::before {
+                        background-color: rgba(72, 200, 216, 0.8);
+                    }
+                }
+                #purple:checked + label {
+                    background-color: rgba(152, 216, 184, 0.8) ;
+                    &::before {
+                        background-color: rgb(192, 256, 224);
+                    }
+                }
+                #white:checked + label {
+                    background-color: rgba(255, 255, 255, 0.8);
+                    &::before {
+                        background-color: rgb(255, 255, 255);
+                    }
+                }
+                #yellow:checked + label {
+                    background-color: rgba(240, 256, 192, 0.6);
+                    &::before {
+                        background-color: rgb(256, 256, 162);
+                    }
+                }
+            }
+        }
+    }
+}

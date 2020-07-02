@@ -1,0 +1,594 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+html, html *, html *::before, html *::after {
+  transition: ease-in all 400ms !important;
+}
+
+html[data-theme=blue] {
+  --ten-px: 10px;
+  --seven-px: 7px;
+  --three-px: 3px;
+  --silver: #c0c0c050;
+  --silver-01: rgba(10, 10, 20, 0.7);
+  --color-body-bg: rgb(112, 80, 256);
+  --color-body: white;
+  --color-action-bg: rgb(60, 70, 95);
+  --color-action: rgb(112, 240, 256);
+  --color-main: rgb(230, 230, 230);
+  --color-opacity: rgba(0, 0, 0, 0.3);
+}
+html[data-theme=blue] .action {
+  color: var(--color-action);
+}
+html[data-theme=blue] .action-bg {
+  background-color: var(--color-action-bg);
+}
+html[data-theme=blue] .action-btn {
+  background-color: var(--color-action);
+}
+html[data-theme=blue] .main-title {
+  color: var(--color-main);
+}
+html[data-theme=blue] .action-btn {
+  color: var(--color-action-bg);
+}
+html[data-theme=blue] .opacity-class {
+  background-color: var(--color-opacity);
+}
+html[data-theme=blue] body {
+  color: var(--color-body);
+  background-color: var(--color-body-bg);
+}
+html[data-theme=blue] .see h1::first-letter, html[data-theme=blue] .see h2::first-letter, html[data-theme=blue] .see h3::first-letter, html[data-theme=blue] .see h4::first-letter, html[data-theme=blue] .see h5::first-letter, html[data-theme=blue] .see h6::first-letter {
+  color: var(--color-action);
+}
+
+html[data-theme=dark] {
+  --ten-px: 10px;
+  --seven-px: 7px;
+  --three-px: 3px;
+  --silver: #c0c0c050;
+  --color-body-bg: rgb(30, 50, 65);
+  --color-body: white;
+  --color-action-bg: rgb(60, 70, 95);
+  --color-action: rgb(208, 32, 96);
+  --color-main: rgb(112, 240, 256);
+  --color-opacity: rgba(0, 10, 20, 0.25);
+}
+html[data-theme=dark] .action {
+  color: var(--color-action);
+}
+html[data-theme=dark] .action-bg {
+  background-color: var(--color-action-bg);
+}
+html[data-theme=dark] .action-btn {
+  background-color: var(--color-action);
+}
+html[data-theme=dark] .main-title h1, html[data-theme=dark] .main-title h2, html[data-theme=dark] .main-title h3, html[data-theme=dark] .main-title h4, html[data-theme=dark] .main-title h5, html[data-theme=dark] .main-title h6 {
+  color: var(--color-main);
+}
+html[data-theme=dark] .action-btn {
+  color: var(--color-action-bg);
+}
+html[data-theme=dark] .opacity-class {
+  background-color: var(--color-opacity);
+}
+html[data-theme=dark] .see h1::first-letter, html[data-theme=dark] .see h2::first-letter, html[data-theme=dark] .see h3::first-letter, html[data-theme=dark] .see h4::first-letter, html[data-theme=dark] .see h5::first-letter, html[data-theme=dark] .see h6::first-letter {
+  color: var(--color-action);
+}
+html[data-theme=dark] body {
+  color: var(--color-body);
+  background-color: var(--color-body-bg);
+}
+
+html[data-theme=purple] {
+  --ten-px: 10px;
+  --seven-px: 7px;
+  --three-px: 3px;
+  --silver: #90909050;
+  --silver-01: rgba(0, 0, 0, 0.7);
+  --color-body-bg: rgb(192, 256, 224);
+  --color-body: black;
+  --color-action-bg: rgba(180, 30, 200, 0.8);
+  --color-action: rgba(180, 30, 200, 0.8);
+  --color-main: rgb(80, 80, 80);
+  --color-opacity: rgb(30, 30, 30, 0.12);
+}
+html[data-theme=purple] .action {
+  color: var(--color-action);
+}
+html[data-theme=purple] .action-bg {
+  background-color: var(--color-action-bg);
+}
+html[data-theme=purple] .action-btn {
+  background-color: var(--color-action);
+}
+html[data-theme=purple] .main-title {
+  color: var(--color-main);
+}
+html[data-theme=purple] .action-btn {
+  color: var(--color-action-bg);
+}
+html[data-theme=purple] .opacity-class {
+  background-color: var(--color-opacity);
+}
+html[data-theme=purple] body {
+  background-color: var(--color-body-bg);
+  color: var(--color-body);
+}
+html[data-theme=purple] .see h1::first-letter, html[data-theme=purple] .see h2::first-letter, html[data-theme=purple] .see h3::first-letter, html[data-theme=purple] .see h4::first-letter, html[data-theme=purple] .see h5::first-letter, html[data-theme=purple] .see h6::first-letter {
+  color: var(--color-action);
+}
+
+html[data-theme=white] {
+  --ten-px: 10px;
+  --seven-px: 7px;
+  --three-px: 3px;
+  --silver: #c0c0c050;
+  --color-body-bg: rgb(230, 230, 230);
+  --color-body: black;
+  --color-action-bg: rgb(30, 30, 30);
+  --color-action: rgb(80, 80, 80);
+  --color-main: rgb(0, 0, 0);
+  --color-opacity: rgb(250, 250, 250);
+}
+html[data-theme=white] .action {
+  color: var(--color-action);
+}
+html[data-theme=white] .action-bg {
+  background-color: var(--color-action-bg);
+}
+html[data-theme=white] .main-title {
+  color: var(--color-main);
+}
+html[data-theme=white] .action-btn {
+  background-color: var(--color-action-bg);
+}
+html[data-theme=white] .opacity-class {
+  background-color: var(--color-opacity);
+}
+html[data-theme=white] body {
+  background-color: var(--color-body-bg);
+  color: var(--color-body);
+}
+html[data-theme=white] .see h1::first-letter, html[data-theme=white] .see h2::first-letter, html[data-theme=white] .see h3::first-letter, html[data-theme=white] .see h4::first-letter, html[data-theme=white] .see h5::first-letter, html[data-theme=white] .see h6::first-letter {
+  color: var(--color-action);
+}
+
+html[data-theme=yellow] {
+  --ten-px: 10px;
+  --seven-px: 7px;
+  --three-px: 3px;
+  --silver: #c0c0c050;
+  --color-body-bg: rgb(240, 256, 192);
+  --color-body: black;
+  --color-action-bg: rgb(208, 32, 96);
+  --color-action: rgb(80, 80, 80);
+  --color-main: rgb(0, 0, 0);
+  --color-opacity: rgb(80, 80, 80, 0.17);
+}
+html[data-theme=yellow] .action {
+  color: var(--color-action);
+}
+html[data-theme=yellow] .action-bg {
+  background-color: var(--color-action-bg);
+}
+html[data-theme=yellow] .main-title {
+  color: var(--color-main);
+}
+html[data-theme=yellow] .action-btn {
+  background-color: var(--color-action-bg);
+}
+html[data-theme=yellow] .opacity-class {
+  background-color: var(--color-opacity);
+}
+html[data-theme=yellow] body {
+  background-color: var(--color-body-bg);
+  color: var(--color-body);
+}
+html[data-theme=yellow] .see h1::first-letter, html[data-theme=yellow] .see h2::first-letter, html[data-theme=yellow] .see h3::first-letter, html[data-theme=yellow] .see h4::first-letter, html[data-theme=yellow] .see h5::first-letter, html[data-theme=yellow] .see h6::first-letter {
+  color: var(--color-action);
+}
+
+.main-title {
+  font-family: Arial;
+  text-transform: capitalize;
+}
+.main-title h1 {
+  font-size: 1.6rem;
+}
+.main-title h2 {
+  font-size: 1.3rem;
+}
+.main-title p {
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+
+.opacity-class {
+  padding: calc(var(--seven-px)*2) calc(var(--ten-px)*2);
+  border-radius: 5px;
+}
+
+.footer {
+  width: 100%;
+  color: white;
+  background-color: #04040490;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.footer .social {
+  margin-top: -10px;
+  width: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.footer .social img {
+  width: 20px;
+  transition: 0.1s;
+}
+.footer .social img:hover {
+  transform: translateY(-5px);
+}
+
+nav {
+  margin-bottom: var(--seven-px);
+}
+nav main .container {
+  width: 100%;
+  box-sizing: border-box;
+}
+nav main .container .contents {
+  padding: var(--seven-px) var(--ten-px);
+  width: 240px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+nav main .container .contents .content {
+  background-color: var(--silver);
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+}
+
+main {
+  background: none;
+}
+main .container .section-01, main .container .section-02, main .container .others {
+  margin: 10px 10px;
+}
+main .container .section-01 {
+  display: grid;
+  grid-template-columns: 13% auto;
+  grid-gap: 0 0px;
+}
+main .container .section-01 .arrow {
+  background-color: var(--silver);
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  box-shadow: 0px 0px 5px var(--silver);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+}
+main .container .section-01 .arrow span {
+  margin-right: var(--three-px);
+  width: 40%;
+  height: 40%;
+  clip-path: polygon(100% 0, 100% 100%, 0 50%);
+}
+main .container .section-01 .content {
+  margin-top: 0px;
+}
+main .container .section-01 .content h1 {
+  line-height: 0;
+}
+main .container .section-01 .content p {
+  height: 12vh;
+  overflow: scroll;
+}
+main .container .section-02 {
+  box-shadow: 3px 3px 7px var(--silver);
+}
+main .container .section-02 .main-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
+  font-family: "Segoe UI";
+}
+main .container .section-02 .main-title .arrow {
+  width: 2%;
+  font-size: 1.5rem;
+}
+main .container .section-02 .main-title h2 {
+  width: 90%;
+  line-height: 0;
+}
+main .container .section-02 .content {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  height: 40vh;
+  overflow: scroll;
+}
+main .container .section-02 .content p img {
+  font-size: 12px;
+  text-transform: lowercase;
+}
+main .container .others .contents {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: var(--ten-px) var(--ten-px);
+}
+main .container .others .contents .content p {
+  height: 30vh;
+  overflow: scroll;
+}
+main .container .others .contents .content p img {
+  font-size: 12px;
+  text-transform: lowercase;
+}
+main .container .others .contents .content .btn {
+  border-radius: 30px;
+  font-size: default;
+  padding: var(--seven-px) calc(var(--ten-px));
+  color: white;
+  border: none;
+  outline: none;
+}
+main .container .others .contents .see p {
+  height: fit-content;
+}
+
+footer {
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  font-family: Candara;
+}
+footer p .name {
+  font-weight: 900;
+  font-family: "Neon80s";
+}
+
+@media (min-width: 1000px) {
+  nav {
+    position: fixed;
+    width: 60px;
+  }
+  nav main .container {
+    height: 55vh;
+    box-sizing: border-box;
+    padding: calc(var(--ten-px)*3) 0px;
+  }
+  nav main .container .contents {
+    width: 55px;
+    height: 240px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #main {
+    position: absolute;
+    left: 90px;
+    top: 20px;
+    margin-right: 20px;
+  }
+  #main .container .section-01 {
+    display: grid;
+    grid-template-columns: auto 93.5%;
+  }
+  #main .container .section-01 p {
+    height: 10vh;
+  }
+  #main .container .section-01 .content {
+    margin-top: -10px;
+  }
+  #main .container .section-02 .main-title {
+    display: grid;
+    grid-template-columns: auto 96%;
+  }
+  #main .container .section-02 .content {
+    height: 30vh;
+    box-shadow: 0px -1px 1px #e0e0e030;
+  }
+  #main .container .others .contents {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0%;
+    left: 60px;
+    width: 100%;
+  }
+}
+@media (min-width: 1300px) {
+  body::-webkit-scrollbar {
+    width: 10px;
+  }
+  body::-webkit-scrollbar-track {
+    background-color: #f0f0f08a;
+    border-radius: 10px;
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--color-action-bg);
+    border-radius: 10px;
+  }
+
+  nav main .container {
+    height: 100vh;
+  }
+
+  #main {
+    margin-bottom: 80px;
+  }
+  #main .container .section-01 p {
+    overflow: visible;
+    height: 15vh;
+  }
+  #main .container .section-02 .content {
+    height: 35vh;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+  #main .container .section-02 .content p {
+    width: 95%;
+  }
+  #main .container .section-02 .content p img {
+    font-size: 12px;
+  }
+  #main .container .section-02 .content::-webkit-scrollbar {
+    width: 0px;
+  }
+  #main .container .section-02 .content:hover::-webkit-scrollbar {
+    width: 10px;
+  }
+  #main .container .section-02 .content:hover::-webkit-scrollbar-track {
+    background-color: #dcdcdc;
+    border-radius: 10px;
+  }
+  #main .container .section-02 .content:hover::-webkit-scrollbar-thumb {
+    background-color: var(--color-action-bg);
+    border-radius: 10px;
+  }
+  #main .container .others .contents {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  }
+  #main .container .others .contents .content p {
+    height: 30vh;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+  #main .container .others .contents .content p img {
+    font-size: 12px;
+    text-transform: lowercase;
+  }
+  #main .container .others .contents .content p::-webkit-scrollbar {
+    width: 0px;
+  }
+  #main .container .others .contents .content p:hover::-webkit-scrollbar {
+    width: 10px;
+  }
+  #main .container .others .contents .content p:hover::-webkit-scrollbar-track {
+    background-color: #dcdcdc;
+    border-radius: 10px;
+  }
+  #main .container .others .contents .content p:hover::-webkit-scrollbar-thumb {
+    background-color: var(--color-action-bg);
+    border-radius: 10px;
+  }
+  #main .container .others .contents .see p {
+    overflow: visible;
+  }
+}
+:root {
+  --blue: rgba(60, 70, 95, 1);
+  --blue-before: rgb(132, 130, 256);
+  --dark-bg: rgba(10, 30, 45, 1);
+  --dark-before: rgb(112, 240, 256);
+  --purple-bg: rgba(88, 73, 140, 0.8);
+  --purple-before: rgb(192, 256, 224);
+  --yellow-bg: rgba(228, 52, 116, 0.8);
+  --yellow-before: rgb(240, 256, 192);
+}
+
+main .toggle {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: var(--seven-px);
+}
+main .toggle .contents {
+  border-radius: 3px;
+  width: 210px;
+  padding: var(--seven-px) var(--ten-px);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 35px);
+  grid-gap: 0px var(--seven-px);
+}
+main .toggle .contents div {
+  display: flex;
+  position: relative;
+  width: 35px;
+  height: fit-content;
+}
+main .toggle .contents div input[type=radio] {
+  visibility: collapse;
+}
+main .toggle .contents div input[type=radio]:checked + label::before {
+  transition: 600ms;
+  right: 0px;
+}
+main .toggle .contents div label {
+  box-sizing: border-box;
+  position: absolute;
+  width: 35px;
+  height: 15px;
+  background-color: #b0b0b0;
+  border-radius: 30px;
+  transition: 0.5s;
+}
+main .toggle .contents div label::before {
+  content: "";
+  background-color: #747474;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  top: -2px;
+  transition: 600ms;
+}
+main .toggle .contents div #blue:checked + label {
+  background-color: rgba(90, 90, 240, 0.4);
+}
+main .toggle .contents div #blue:checked + label::before {
+  background-color: #9696f0;
+}
+main .toggle .contents div #dark:checked + label {
+  background-color: rgba(30, 50, 65, 0.8);
+}
+main .toggle .contents div #dark:checked + label::before {
+  background-color: rgba(72, 200, 216, 0.8);
+}
+main .toggle .contents div #purple:checked + label {
+  background-color: rgba(152, 216, 184, 0.8);
+}
+main .toggle .contents div #purple:checked + label::before {
+  background-color: #c0ffe0;
+}
+main .toggle .contents div #white:checked + label {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+main .toggle .contents div #white:checked + label::before {
+  background-color: white;
+}
+main .toggle .contents div #yellow:checked + label {
+  background-color: rgba(240, 255, 192, 0.6);
+}
+main .toggle .contents div #yellow:checked + label::before {
+  background-color: #ffffa2;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,21 @@
+nav {
+    margin-bottom: var(--seven-px);
+    main {
+        .container {
+            width: 100%;
+            box-sizing: border-box;
+            .contents {
+                padding: var(--seven-px) var(--ten-px);
+                width: 240px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                .content {
+                    background-color: var(--silver);
+                    width: 40px;    height: 40px;
+                    border-radius: 50px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,163 @@
+@media (min-width: 1000px) {
+    nav {
+        position: fixed;
+        width: 60px;
+        main {
+            .container {
+                height: 55vh;
+                box-sizing: border-box;
+                padding: calc(var(--ten-px)*3) 0px;
+                .contents {
+                    width: 55px;
+                    height: 240px;
+                    padding: 0px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+            }
+        }
+    }
+    #main {
+        position: absolute;
+        left: 90px;
+        top: 20px;
+        margin-right: 20px;
+        .container {
+            .section-01 {
+                display: grid;
+                grid-template-columns: auto 93.5%;
+
+                p {
+                    height: 10vh;
+                }
+                .content {
+                    margin-top: -10px;
+                }
+            }
+            .section-02 {
+                .main-title {
+                    display: grid;
+                    grid-template-columns: auto 96%;
+                }
+                .content {
+                    height: 30vh;
+                    box-shadow: 0px -1px 1px #e0e0e030;
+                }
+            }
+            .others {
+                .contents {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+                }
+            }
+        }
+    }
+    footer {
+        position: fixed;
+        bottom: 0%;
+        left: 60px;
+        width: 100%;
+    }
+}
+@media (min-width: 1300px) {
+    body {
+        &::-webkit-scrollbar {
+            width: 10px;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: #f0f0f08a;
+            border-radius: 10px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: var(--color-action-bg);
+            border-radius: 10px;
+        }
+    }
+    nav {
+        main {
+            .container {
+                height: 100vh;
+            }
+        }
+    }
+    #main {
+        margin-bottom: 80px;
+        .container {
+            .section-01  {
+                p {
+                    overflow: visible;
+                    height: 15vh;
+                }
+            }
+            .section-02 {
+                .content {
+                    height: 35vh;
+                    overflow: hidden;
+                    overflow-y: scroll;
+                    p {
+                        width: 95%;
+                        img {
+                            font-size: 12px;
+                        }
+                    }
+                    &::-webkit-scrollbar {
+                        width: 0px;
+                    }
+                    &:hover {
+                        &::-webkit-scrollbar {
+                            width: 10px;
+                        }
+                        &::-webkit-scrollbar-track {
+                            background-color: #dcdcdc;
+                            border-radius: 10px;
+                        }
+                        &::-webkit-scrollbar-thumb {
+                            background-color: var(--color-action-bg);
+                            border-radius: 10px;
+                        }
+                    }
+                }
+            }
+            .others {
+                .contents {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+                    .content {
+                        p {
+                            height: 30vh;
+                            overflow: hidden;
+                            overflow-y: scroll;
+                            img {
+                                font-size: 12px;
+                                text-transform: lowercase;
+                            }
+                            &::-webkit-scrollbar {
+                                width: 0px;
+                            }
+                            &:hover {
+                                &::-webkit-scrollbar {
+                                    width: 10px;
+                                }
+                                &::-webkit-scrollbar-track {
+                                    background-color: #dcdcdc;
+                                    border-radius: 10px;
+                                }
+                                &::-webkit-scrollbar-thumb {
+                                    background-color: var(--color-action-bg);
+                                    border-radius: 10px;
+                                }
+                            }
+                        }
+                    }
+                    .see {
+                        p {
+                            overflow: visible;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
